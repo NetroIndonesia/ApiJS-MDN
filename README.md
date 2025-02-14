@@ -43,7 +43,7 @@ MDN Scraper API is a simple Express-based application that retrieves content fro
 
 ### Start the Server:
 ```bash
-node index.js
+npm start
 ```
 
 The server will run at: [http://localhost:5000](http://localhost:5000)
