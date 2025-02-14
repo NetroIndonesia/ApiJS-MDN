@@ -6,10 +6,10 @@ MDN Scraper API is a simple Express-based application that retrieves content fro
 
 ## Features
 
-- ** Search by Category/Topic:** Query MDN articles with category or category-topic combination.
-- ** Content Extraction:** Scrape and extract relevant information from MDN pages.
-- ** Translation Support:** Translate scraped content to Indonesian.
-- ** RESTful Interface:** Easy-to-use GET request interface.
+-  Search by Category/Topic: Query MDN articles with category or category-topic combination.
+-  Content Extraction: Scrape and extract relevant information from MDN pages.
+-  Translation Support: Translate scraped content to Indonesian.
+-  RESTful Interface: Easy-to-use GET request interface.
 
 ---
 
