@@ -1,83 +1,96 @@
-
-
-```markdown
 # MDN Scraper API
 
-A simple Express API that fetches content from MDN (Mozilla Developer Network) based on category and topic queries. Optionally, it translates the content to Indonesian using the Google Translate API.
+MDN Scraper API is a simple Express-based application that retrieves content from Mozilla Developer Network (MDN) based on category or topic queries. It can also translate content to Indonesian using the Google Translate API.
 
-## Features
+---
 
-- Search MDN articles by category and/or topic.
-- Scrape and extract relevant content from MDN pages.
-- Option to translate content to Indonesian.
-- Simple RESTful API endpoint.
+## 🚀 Features
 
-## Prerequisites
+- **🔍 Search by Category/Topic:** Query MDN articles with category or category-topic combination.
+- **🛠️ Content Extraction:** Scrape and extract relevant information from MDN pages.
+- **🌐 Translation Support:** Translate scraped content to Indonesian.
+- **📡 RESTful Interface:** Easy-to-use GET request interface.
 
-- Node.js (version 12 or higher)
-- npm
+---
 
-## Installation
+## ⚙️ Prerequisites
 
-1. Clone the repository:
+- Node.js (v12+)
+- npm (Node Package Manager)
 
-   ```bash
-   git clone <repository-url> ```
+---
 
-2. Navigate to the project directory:
+## 🛠️ Installation
 
-   ```bash
-   cd <project-directory> ```
+1. **Clone the Repository:**
+    ```bash
+    git clone <repository-url>
+    ```
 
-3. Install the dependencies:
+2. **Navigate to the Project Directory:**
+    ```bash
+    cd <project-directory>
+    ```
 
-   ```bash
-   npm install  ```
+3. **Install Dependencies:**
+    ```bash
+    npm install
+    ```
 
-## Usage
+---
 
-Start the server:
+## 🚀 Usage
 
+### Start the Server:
 ```bash
-node index.js  ```
+node index.js
+```
 
-The server will run on [http://localhost:5000](http://localhost:5000).
+The server will run at: [http://localhost:5000](http://localhost:5000)
 
-### API Endpoint
+---
 
-#### GET /api/mdn
+## 🌐 API Endpoint
 
-Fetch MDN content based on query parameters.
+### GET `/api/mdn`
 
-**Query Parameters:**
+Fetch content from MDN based on query parameters.
 
-- `q` (required): The query string in one of two formats:
-  - `category` (e.g., `javascript`) to fetch a list of topics for that category.
-  - `category?topic` (e.g., `javascript?array`) to fetch a specific topic.
-- `lang` (optional): Language code. Use `id` for Indonesian. Defaults to English.
+#### 🛠️ Query Parameters:
 
-**Examples:**
+- **`q` (required)**: Query string with one of the following formats:
+  - **Category** *(e.g., `javascript`)*: Fetch topics for that category.
+  - **Category?Topic** *(e.g., `javascript?array`)*: Fetch specific topic content.
+- **`lang` (optional)**: Language code *(default: `en`)*.
+  - Use `id` for Indonesian translation.
 
-- Get topics for a category:
+---
 
-  ```
-  GET http://localhost:5000/api/mdn?q=javascript
-  ```
+### 📖 Example Requests:
 
-- Get a specific topic with translation to Indonesian:
+#### 1️⃣ Get topics for a category:
+```bash
+GET http://localhost:5000/api/mdn?q=javascript
+```
 
-  ```
-  GET http://localhost:5000/api/mdn?q=javascript?array&lang=id
-  ```
+#### 2️⃣ Get a specific topic (with Indonesian translation):
+```bash
+GET http://localhost:5000/api/mdn?q=javascript?array&lang=id
+```
 
-## Dependencies
+---
 
-- [Express](https://expressjs.com/)
-- [Axios](https://axios-http.com/)
-- [Cheerio](https://cheerio.js.org/)
-- [CORS](https://www.npmjs.com/package/cors)
-- [@vitalets/google-translate-api](https://www.npmjs.com/package/@vitalets/google-translate-api)
+## 🧩 Dependencies
 
-## License
+- [Express](https://expressjs.com/) - Web framework for Node.js
+- [Axios](https://axios-http.com/) - HTTP client for fetching content
+- [Cheerio](https://cheerio.js.org/) - jQuery-like syntax for parsing HTML
+- [CORS](https://www.npmjs.com/package/cors) - Cross-Origin Resource Sharing middleware
+- [@vitalets/google-translate-api](https://www.npmjs.com/package/@vitalets/google-translate-api) - API for translation services
+
+---
+
+## ⚖️ License
 
 This project is licensed under the MIT License.
+
