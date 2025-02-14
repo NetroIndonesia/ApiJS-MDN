@@ -4,23 +4,23 @@ MDN Scraper API is a simple Express-based application that retrieves content fro
 
 ---
 
-## 🚀 Features
+## Features
 
-- **🔍 Search by Category/Topic:** Query MDN articles with category or category-topic combination.
-- **🛠️ Content Extraction:** Scrape and extract relevant information from MDN pages.
-- **🌐 Translation Support:** Translate scraped content to Indonesian.
-- **📡 RESTful Interface:** Easy-to-use GET request interface.
+- ** Search by Category/Topic:** Query MDN articles with category or category-topic combination.
+- ** Content Extraction:** Scrape and extract relevant information from MDN pages.
+- ** Translation Support:** Translate scraped content to Indonesian.
+- ** RESTful Interface:** Easy-to-use GET request interface.
 
 ---
 
-## ⚙️ Prerequisites
+## Prerequisites
 
 - Node.js (v12+)
 - npm (Node Package Manager)
 
 ---
 
-## 🛠️ Installation
+## Installation
 
 1. **Clone the Repository:**
     ```bash
@@ -39,7 +39,7 @@ MDN Scraper API is a simple Express-based application that retrieves content fro
 
 ---
 
-## 🚀 Usage
+## Usage
 
 ### Start the Server:
 ```bash
@@ -56,7 +56,7 @@ The server will run at: [http://localhost:5000](http://localhost:5000)
 
 Fetch content from MDN based on query parameters.
 
-#### 🛠️ Query Parameters:
+#### Query Parameters:
 
 - **`q` (required)**: Query string with one of the following formats:
   - **Category** *(e.g., `javascript`)*: Fetch topics for that category.
@@ -66,21 +66,21 @@ Fetch content from MDN based on query parameters.
 
 ---
 
-### 📖 Example Requests:
+### Example Requests:
 
-#### 1️⃣ Get topics for a category:
+#### Get topics for a category:
 ```bash
 GET http://localhost:5000/api/mdn?q=javascript
 ```
 
-#### 2️⃣ Get a specific topic (with Indonesian translation):
+#### Get a specific topic (with Indonesian translation):
 ```bash
 GET http://localhost:5000/api/mdn?q=javascript?array&lang=id
 ```
 
 ---
 
-## 🧩 Dependencies
+## Dependencies
 
 - [Express](https://expressjs.com/) - Web framework for Node.js
 - [Axios](https://axios-http.com/) - HTTP client for fetching content
