@@ -22,28 +22,24 @@ A simple Express API that fetches content from MDN (Mozilla Developer Network) b
 1. Clone the repository:
 
    ```bash
-   git clone <repository-url>
-   ```
+   git clone <repository-url> ```
 
 2. Navigate to the project directory:
 
    ```bash
-   cd <project-directory>
-   ```
+   cd <project-directory> ```
 
 3. Install the dependencies:
 
    ```bash
-   npm install
-   ```
+   npm install  ```
 
 ## Usage
 
 Start the server:
 
 ```bash
-node index.js
-```
+node index.js  ```
 
 The server will run on [http://localhost:5000](http://localhost:5000).
 
