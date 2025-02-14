@@ -24,12 +24,12 @@ MDN Scraper API is a simple Express-based application that retrieves content fro
 
 1. **Clone the Repository:**
     ```bash
-    git clone <repository-url>
+    git clone https://github.com/NetroIndonesia/ApiJS-MDN.git
     ```
 
 2. **Navigate to the Project Directory:**
     ```bash
-    cd <project-directory>
+    cd ApiJS-MDN-main
     ```
 
 3. **Install Dependencies:**
