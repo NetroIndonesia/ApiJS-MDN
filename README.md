@@ -86,7 +86,3 @@ Fetch MDN content based on query parameters.
 
 This project is licensed under the MIT License.
 ```
-
----
-
-Simpan kedua file tersebut (misalnya dengan nama `index.js` dan `README.md`), kemudian Anda dapat menguploadnya ke repository GitHub sesuai kebutuhan.
